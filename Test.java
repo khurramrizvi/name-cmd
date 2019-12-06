@@ -1,11 +1,11 @@
-
+import java.io.*;
 class Test{
 public static void main(String args[]) throws Exception{
 	
      int timeToWait = 13; //second
      int endTime = 0;
      System.out.println("\n");
-     String color[] = {"a","b","c","d","e","f","1","2","3","4","5"};
+     String color[] = {"a","b","c","d","e","f","1","2","3","4","5","6"};
        String ar[] = {
        "kkk    kkk  hhh     hhh uuu     uuu rrrrrrrrr  rrrrrrrrr    aaaaa   mmmm    mmmm",
        "kkk kkk     hhh     hhh uuu     uuu rrr     rr rrr     rr aa     aa mm mm  mm mm",
@@ -24,7 +24,7 @@ public static void main(String args[]) throws Exception{
             for (int i=0; i<timeToWait ; i++) {
                 Thread.sleep(1000);
                 System.out.println(ar[i]);
-                //Runtime.getRuntime().exec("cmd /c dir /s"+"color a"+"C:\\WINDOWS\\system32");
+                Runtime.getRuntime().exec("cmd /c dir /s"+"color b"+"C:\\WINDOWS\\system32");
             }
 
 
